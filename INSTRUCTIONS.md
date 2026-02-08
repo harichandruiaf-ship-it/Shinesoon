@@ -1,0 +1,29 @@
+# How to Start 'Shinesoon'
+
+Since the automated setup script cannot run directly in this environment (due to missing `npm` in the path here), please follow these steps:
+
+## Option 1: One-Click Setup (Recommended)
+1.  Navigate to the project folder: 
+    `c:\Users\HarichandruThirumuru\.gemini\antigravity\brain\090b0221-d6b1-4aa8-aea4-7fe45665b5ad\ShineSoon`
+2.  Double-click the file named **`setup_and_run.bat`**.
+3.  This will open a terminal window, install all dependencies for both Server and Client, and launch the application automatically.
+
+## Option 2: Manual Setup
+If the script doesn't work, open your terminal (PowerShell or Command Prompt) and run:
+
+### 1. Start Backend
+```bash
+cd server
+npm install
+npm run dev
+```
+
+### 2. Start Frontend
+Open a **new** terminal window:
+```bash
+cd client
+npm install
+npm run dev
+```
+
+Access the app at: http://localhost:5173
